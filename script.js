@@ -113,10 +113,9 @@ inquirer
           For Questions about this project or other projects please contact me:
           ${response.github}
           ${response.emailaddress}
-          `
-         
-          
-        fs.writeFile('README.md', userInput, (err) => {
+          `;
+             
+        fs.writeFile('readmetest.txt', userInput, (err) => {
             if (err) throw err;
             console.log('Thank you! Your ReadMe has been Created');
           }); 
