@@ -11,7 +11,7 @@ fs.writeFile('Readme.md', JSON.stringify(response), (err) => {
 The information for each section is saved and an object is created for the readme information and pulled into the file once the information has been added by the user.*/
 
 const inquirer = require('inquirer');
-const fs = require('fs')
+const fs = require('fs'); 
 
 
 inquirer
@@ -99,16 +99,21 @@ inquirer
                5. Testing
                6. Questions  
 
-          ##Installation
-          ${response.installation}
           ##Usage 
           ${response.usage}
+
+          ##Installation
+          ${response.installation}
+          
           ##License
-          ${response.liscence} 
+          ${response.liscence}
+} 
           ##Contributing 
           ${response.contribution}
+
           ##Tests
-          ${response.test-instructions} 
+          ${response.testinstructions} 
+
           ##Questions 
           For Questions about this project or other projects please contact me:
           ${response.github}
