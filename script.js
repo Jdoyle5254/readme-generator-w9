@@ -87,11 +87,11 @@ inquirer
           // Write code between the <div> tags to output the data from the music object above.
           // Use an h2 element for the title and a p element for artist and title
           const userInput = `
-          ##Project Title
+          ## Project Title
           ${response.title}
-          ##Description 
+          ## Description 
           ${response.description}
-          ##Table of Contents:
+          ## Table of Contents:
                1. Installation
                2. Usage
                3. Licence
@@ -99,28 +99,28 @@ inquirer
                5. Testing
                6. Questions  
 
-          ##Usage 
+          ## Usage 
           ${response.usage}
 
-          ##Installation
+          ## Installation
           ${response.installation}
           
-          ##License
+          ## License
           ${response.liscence}
 } 
-          ##Contributing 
+          ## Contributing 
           ${response.contribution}
 
-          ##Tests
+          ## Tests
           ${response.testinstructions} 
 
-          ##Questions 
+          ## Questions 
           For Questions about this project or other projects please contact me:
           ${response.github}
           ${response.emailaddress}
           `;
              
-        fs.writeFile('readmetest.txt', userInput, (err) => {
+        fs.writeFile('readme.md', userInput, (err) => {
             if (err) throw err;
             console.log('Thank you! Your ReadMe has been Created');
           }); 
