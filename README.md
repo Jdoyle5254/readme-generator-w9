@@ -1,7 +1,7 @@
 
-## Project Title shoes      undefined
+## Project Title animal farm      [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description 
-Christmas
+this is me playing animal farm watching hallmark movies
 ## Table of Contents:
   1. [Installation](#Installation)
   2. [Usage](#Usage)
@@ -11,24 +11,24 @@ Christmas
   6. [Questions](#Questions) 
 
 ## Installation
-Install on your local  
+run in node your on your own from there  
 
 ## Usage 
-hot Chocolate
+use only when driinking hot coco
 
 ## Contributing 
-give all the gifts
+everyone helped me
 
 ## Tests
-run and run often 
+you have to run froom the start to be able to test 
 
 ## License
-undefined
- Copyright [yyyy] [name of copyright owner] 	 	 Licensed under the Apache License, Version 2.0 (the "License");    you may not use this file except in compliance with the License.  You may obtain a copy of the License at  	  http://www.apache.org/licenses/LICENSE-2.0   	 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and  limitations under the License.
+GNU
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 ## Questions 
 For more information on this project, here is a link to GitHub:
 [GitHub Link](https://github.com/jdoyle5254)
 
 Please reach out via email for any further questions:
-jen.doyle5254@gmail.com
+jen.doyle5254@att.net
