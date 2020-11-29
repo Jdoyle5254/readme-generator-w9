@@ -48,8 +48,8 @@ inquirer
       },
       {
         type: 'checkbox',
-        message: 'Which Liscence would you like to use (select only one)?',
-        name: 'liscence',
+        message: 'Which License would you like to use (select only one)?',
+        name: 'license',
         choices: [
             {
               name: 'MIT',
@@ -84,15 +84,19 @@ inquirer
     .then((response) => {
         console.log('response', response) 
 
-        var liscenceDetails = '';
-          if(response.liscence == 'MIT'){
-            liscenceDetails = "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \r \r The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \r \r \t THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
+        var licenseDetails = '';
+        var licenseBadge = '';
+          if(response.license == 'MIT'){
+            licenseDetails = "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \r \r The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \r \r \t THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
+             licenseBadge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
            } 
-            else if (response.liscene == 'GNU'){
-            liscenceDetails = "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
+            else if (response.license == 'GNU'){
+            licenseDetails = "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA";
+            licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
           }
-          else if (response.liscence == 'Apache'){ 
-            liscenceDetails = " Copyright [yyyy] [name of copyright owner]\r \t \t Licensed under the Apache License, Version 2.0 (the \"License\"); \r   you may not use this file except in compliance with the License. \r You may obtain a copy of the License at \r \t  http://www.apache.org/licenses/LICENSE-2.0  \r \t Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and  limitations under the License."
+          else if (response.license == 'Apache'){ 
+            licenseDetails = " Copyright [yyyy] [name of copyright owner]\r \t \t Licensed under the Apache License, Version 2.0 (the \"License\"); \r   you may not use this file except in compliance with the License. \r You may obtain a copy of the License at \r \t  http://www.apache.org/licenses/LICENSE-2.0  \r \t Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and  limitations under the License.";
+            licenseBadge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 
           }
     
@@ -100,7 +104,7 @@ inquirer
           // Write code between the <div> tags to output the data from the music object above.
           // Use an h2 element for the title and a p element for artist and title
           const userInput = `
-## Project Title ${response.title}
+## Project Title ${response.title}      ${response.licenseBadge}
 ## Description 
 ${response.description}
 ## Table of Contents:
@@ -124,12 +128,14 @@ ${response.contribution}
 ${response.testinstructions} 
 
 ## License
-${response.liscence}
-${liscenceDetails}
+${response.le}
+${licenseDetails}
 
 ## Questions 
-For Questions about this project or other projects please contact me:
-${response.github}
+For more information on this project, here is a link to GitHub:
+[GitHub Link](https://github.com/${response.github})
+
+Please reach out via email for any further questions:
 ${response.emailaddress}
 `;
              
