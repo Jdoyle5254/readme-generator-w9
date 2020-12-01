@@ -110,15 +110,18 @@ inquirer
           // Use an h2 element for the title and a p element for artist and title
           const userInput = `
 ## Project Title ${response.title}      ${licenseBadge}
+
+## Table of Contents:
+  1. [Description](#Description)
+  2. [Installation](#Installation)
+  3. [Usage](#Usage)
+  4. [Contributing](#Contributing)
+  5. [Tests](#Tests)
+  6. [Licence](#Licence)
+  7. [Questions](#Questions) 
+
 ## Description 
 ${response.description}
-## Table of Contents:
-  1. [Installation](#Installation)
-  2. [Usage](#Usage)
-  3. [Contributing](#Contributing)
-  4. [Tests](#Tests)
-  5. [Licence](#Licence)
-  6. [Questions](#Questions) 
 
 ## Installation
 ${response.installation}  
