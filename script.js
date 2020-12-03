@@ -28,14 +28,15 @@ inquirer
       },
       {
         type: 'input',
-        message: 'Please add the program usage information:',
-        name: 'usage',
-      },
-      {
-        type: 'input',
         message: 'Please add the Installation instructions for this project:',
         name: 'installation',
       },
+      {
+        type: 'input',
+        message: 'Please add the program usage information:',
+        name: 'usage',
+      },
+  
       {
         type: 'input',
         message: 'Please add contribution guidelines:',
