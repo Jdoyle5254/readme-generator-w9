@@ -17,7 +17,7 @@ This program was designed to allow people to create a professional RE
  To install and run locally from Git Hub repository, got to the repository: https://github.com/Jdoyle5254/readme-generator-w9
  Click CODE box, select SSH and copy the repository to your clipboard. In your command-line navigate to the folder you want to hold the repository. Once there type 'git clone' and paste the repository information into the line. Once completed open the code in VS by typing the command code . This will take you to VS Code and you will be in the repository on your local machine.  Once cloned, create package.json using `npm init`.   
 
-## Usage 
+## Usage 
 The program can be run from the Terminal from thescript.js file included.The user should navigate to that file in the Terminal and the program can be run by node script.js.The user will be asked for various pieces of information: 
   *'What is the project title?'
   *'Please add a detailed description of this project:'
